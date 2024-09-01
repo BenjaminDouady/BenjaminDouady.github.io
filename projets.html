@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets - Benjamin Douady</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Portfolio de Benjamin Douady</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Ma présentation</a></li>
+                <li><a href="projets.html">Mes projets</a></li>
+                <li><a href="competences.html">Portfolio de Compétences</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="projets">
+        <h1>Mes projets</h1>
+        <div class="grid-container" id="grid-container">
+            <div class="grid-item">
+                <h2 class="project-title">Projet 1</h2>
+                <img src="https://dummyimage.com/600x400/192dab/ffffff.png&text=Image+du+Projet" alt="Image du projet 1" class="project-image">
+                <p class="project-description">Une brève description du projet 1.</p>
+                <a href="#" class="project-button">Découvrir le projet</a>
+            </div>
+            <div class="grid-item">
+                <h2 class="project-title">Projet 2</h2>
+                <img src="https://dummyimage.com/600x400/192dab/ffffff.png&text=Image+du+Projet" alt="Image du projet 2" class="project-image">
+                <p class="project-description">Une brève description du projet 2.</p>
+                <a href="#" class="project-button">Découvrir le projet</a>
+            </div>
+            <!-- Ajoute autant de cartes que nécessaire -->
+        </div>
+    </section>
+
+    <!-- JavaScript pour le scroll infini -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const gridContainer = document.getElementById('grid-container');
+
+            window.addEventListener('scroll', () => {
+                // Si l'utilisateur est proche du bas de la page
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+                    // Clone les éléments du container
+                    const clone = gridContainer.cloneNode(true);
+                    gridContainer.parentNode.appendChild(clone);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Compétences - Benjamin Douady</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Portfolio de Benjamin Douady</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Ma présentation</a></li>
+                <li><a href="projets.html">Mes projets</a></li>
+                <li><a href="competences.html">Portfolio de Compétences</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="competences">
+        <h1>Portfolio de Compétences</h1>
+
+        <!-- Boutons pour afficher différentes versions du tableau -->
+        <div class="button-container">
+            <button onclick="showTable(1)">Compétence n°1</button>
+            <button onclick="showTable(2)">Compétence n°2</button>
+            <button onclick="showTable(3)">Compétence n°3</button>
+            <button onclick="showTable(4)">Compétence n°4</button>
+            <button onclick="showTable(5)">Compétence n°5</button>
+            <button onclick="showTable(6)">Compétence n°6</button>
+        </div>
+
+        <!-- Différentes versions du tableau -->
+        <div class="table-container">
+            <table id="table-1" class="competence-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Réaliser un développement d’application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Maîtriser différents langages de programmation (Java, JavaScript,
+                            Python, PHP)</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="63"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Maîtriser différents types de programmation (Itératif, Orienté
+                            Objet, Récursif)</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Réaliser des programmes pour résoudre un problème donné</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Écrire un code lisible et savoir faire une documentation</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="90"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Savoir utiliser et créer des API</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="50"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Choisir une structure de données adaptée</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table-2" class="competence-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Optimiser des applications informatique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Analyser un problème (Découpage)</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="63"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Analyser, comprendre les enjeux et l’impact d’un algorithme</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="90"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Utiliser des outils mathématiques dans l’informatique</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="45"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Appréhender les différents niveau de langages</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="25"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Utiliser des techniques algorithmique adaptées</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="90"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Optimiser des algorithmes</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table-3" class="competence-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Administrer des systèmes informatiques communicants complexes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Maîtriser l'architecture des systèmes et des réseaux</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Installer et configurer un système d’exploitation et des outils de
+                            programmation</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="100"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Concevoir des applications communicantes par réseau</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="25"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Optimiser des algorithmes</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="75"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table-4" class="competence-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Gérer des données de l’information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Concevoir efficacement des MCD pour faire des BD sécurisées et
+                            optimisées</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="50"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Mettre à jour des BD à travers des requêtes / API</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="63"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Visualiser des données de façon organisé</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="90"></div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <table id="table-5" class="competence-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Conduire un projet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Identification des besoins du client / utilisateur</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="80"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">APlanification et élaboration des processus à mettre en oeuvre</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="90"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Communiquer de manière efficace avec les acteurs du projet</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="50"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Maîtriser les règles juridiques, normes en vigueur et bonnes
+                            pratique</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="35"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table-6" class="competence-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Travailler dans une équipe informatique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="competence-text">Savoir communiquer avec les membres de son équipe</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="50"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Savoir manager une équipe informatique</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="80"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Connaître et savoir appliquer les différentes méthodes de
+                            développement</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="50"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="competence-text">Utiliser des systèmes de gestion de code source pour organiser son
+                            travail</td>
+                        <td class="competence-chart">
+                            <div class="pie-chart" data-percent="63"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
